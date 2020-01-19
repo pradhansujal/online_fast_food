@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style (2).css">
+	  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="stylesheets/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="login1.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="mb-5 p-3 row">
+        <section class="col-sm-4" id="logo">
+          <img src="./img/logo.png" height="150px" width="140px" id="logo" alt="">
+        </section>
+        <section class="col-sm-8" id="links">
+          <ul class="main-nav">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="">PIZZA</a></li>
+            <li><a href="">BURGER</a></li>
+            <li><a href="">SOFT DRINKS</a></li>
+            <li><a href="">CONTACT US</a></li>
+            
+          </ul>
+        </section>
+      </nav>
+    </header>
+      <form action="index (2).html" method="post" class="login-form" name="htmlform" onsubmit="return handleSubmit()">
+        <h1>LOGIN</h1>
+
+        <div class="txtb">
+          <input type="text" name="name" id="name">
+          <span data-placeholder="NAME"></span>
+        </div>
+
+        <div class="txtb">
+          <input type="text" name="address" id="address">
+          <span data-placeholder="ADDRESS"></span>
+        </div>
+		<div class="txtb">
+          <input type="number" name="contact" id="contact">
+          <span data-placeholder="CONTACT NUMBER"></span>
+        </div>
+
+		<input type="submit" class="logbtn" value="Login">
+
+      
+
+      </form>
+
+      <script type="text/javascript">
+      $(".txtb input").on("focus",function(){
+        $(this).addClass("focus");
+      });
+
+      $(".txtb input").on("blur",function(){
+        if($(this).val() == "")
+        $(this).removeClass("focus");
+      });
+	  </script>
+	  <script>
+		function handleSubmit(){
+			var name= document.htmlform.name.value;
+			var address= document.htmlform.address.value;
+			var contact= document.htmlform.contact.value;
+			console.log(name,address,contact);
+				if(name=="")
+				{
+					alert("Name should not be empty");
+					return false;
+				}
+				if(address=="")
+				{
+					alert("Address should not be empty");
+					return false;
+				}
+				if(contact=="")
+				{
+					alert("Contact should not be empty");
+					
+				}
+			
+		};
+      </script>
+
+
+  </body>
+</html>

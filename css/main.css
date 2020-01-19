@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 2, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .title {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  position: relative;
+  border-bottom: 2px solid #aaa;
+  left: 600px;
+  padding: 4px 5px;
+}
+/* line 12, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe p {
+  font-family: "Satisfy", cursive;
+  font-size: 18px;
+  position: relative;
+  left: 260px;
+  top: 14px;
+  width: 850px;
+  text-align: center;
+  color: #ab7867;
+}
+/* line 23, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row {
+  padding: 30px 20px 0px 20px;
+  width: 100%;
+  margin-left: 0;
+}
+
+/* line 36, ../sass/base/_base.scss */
+.slide {
+  opacity: 0;
+  transition: transform 0.7s ease-in-out, opacity 0.7s ease-in-out;
+}
+
+/* line 41, ../sass/base/_base.scss */
+.slide-left {
+  transform: translateX(50%);
+}
+
+/* line 45, ../sass/base/_base.scss */
+.slide-right {
+  transform: translateX(-50%);
+}
+
+/* line 49, ../sass/base/_base.scss */
+.slide-up {
+  transform: translateY(50%);
+}
+/* line 34, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature:hover .desc {
+  opacity: 1;
+  height: 120px;
+}
+/* line 41, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .img-container {
+  position: relative;
+}
+/* line 46, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .img-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 53, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+  position: relative;
+  background: #fee;
+}
+/* line 80, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc .recipe-title a {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  color: #ab7867;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+/* line 89, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc h4 {
+  font-family: "Lora", serif;
+  position: relative;
+  left: 60px;
+  margin: 10px 20px;
+}
+/* line 97, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc img {
+  margin: 10px 10px;
+}
+
+/* line 1, ../sass/modules/_latestRecipes.scss */

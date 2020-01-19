@@ -1,0 +1,596 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+header {
+  z-index: 1;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  padding: 0;
+  margin: 0;
+}
+
+/* line 10, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col {
+  padding: 0 10px;
+}
+/* line 16, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fee;
+  transition: all 0.5s ease-in-out;
+  border-radius: 3px;
+}
+/* line 27, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.2);
+}
+/* line 32, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .img-container {
+  width: 100%;
+}
+/* line 35, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .img-container img {
+  width: 100%;
+  height: auto;
+}
+/* line 43, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .desc h5 {
+  text-transform: capitalize;
+}
+/* line 47, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .desc .recipe-title {
+  font-family: "Satisfy", cursive;
+  font-size: 24px;
+  color: #ab7867;
+  padding: 10px 0 12px 0;
+  margin: 0;
+  border-bottom: 2px solid #aaa;
+}
+/* line 56, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .desc .recipe-time {
+  margin: 0;
+  padding: 10px 0 7px 0;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  float: left;
+}
+/* line 64, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .desc .icon-container {
+  float: right;
+  margin-top: 10px;
+}
+/* line 68, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item .desc .icon-container img {
+  padding: 0 5px;
+}
+/* line 76, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+/* line 81, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline .img-container {
+  width: 45%;
+}
+/* line 85, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline .desc {
+  margin-left: 20px;
+  width: 55%;
+}
+/* line 89, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline .desc .recipe-title {
+  margin-bottom: 30px;
+}
+/* line 93, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline .desc a {
+  padding: 7px 20px;
+  color: #fff;
+  background: #ab7867;
+}
+/* line 99, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-inline .desc a:hover {
+  background-color: #905f4f;
+}
+/* line 110, ../sass/modules/_headRecipes.scss */
+.head-recipes .row .col .item-side .desc .recipe-title {
+  border: none;
+  padding: 10px 0px 0px 0px;
+}
+
+/* line 1, ../sass/modules/_popularRecipe.scss */
+.popular-recipe {
+  position: relative;
+  display: flex;
+}
+/* line 13, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food img {
+  width: 750px;
+  margin: 70px 50px 70px 70px;
+}
+/* line 19, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .img-container3 img {
+  width: 600px;
+  position: absolute;
+  bottom: 75px;
+  left: calc(520px - 280px);
+  transition: transform 0.5s ease-in-out;
+}
+/* line 25, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .img-container3 img:hover {
+  transform: rotate(20deg) scale(1.05);
+}
+/* line 31, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .img-container4 img {
+  width: 110px;
+  position: absolute;
+  bottom: 90px;
+  left: calc(690px - 90px);
+}
+/* line 39, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food p {
+  font-family: "Satisfy", cursive;
+  font-size: 17px;
+  color: white;
+  position: absolute;
+  text-align: center;
+  height: 128px;
+  width: 320px;
+  top: 290px;
+  left: 115px;
+}
+/* line 52, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate img {
+  position: absolute;
+  width: 50px;
+  top: 380px;
+  left: 70px;
+}
+/* line 62, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .view img {
+  width: 15px;
+  position: absolute;
+  top: 380px;
+  left: 150px;
+}
+/* line 69, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .view .number {
+  font-family: "Lora", serif;
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  width: 60px;
+  top: 448px;
+  left: 242px;
+}
+/* line 81, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .comment img {
+  width: 15px;
+  position: absolute;
+  top: 380px;
+  left: 260px;
+}
+/* line 88, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .comment .comment-text {
+  font-family: "Lora", serif;
+  position: absolute;
+  font-size: 12px;
+  color: white;
+  width: 40px;
+  top: 448px;
+  left: 350px;
+}
+/* line 99, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .read {
+  padding: 4px 5px;
+  background: #fee;
+  font-family: "Lora", serif;
+  font-size: 10px;
+  top: 480px;
+  left: 135px;
+  font-weight: bold;
+  position: absolute;
+}
+/* line 109, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .read a {
+  color: black;
+}
+/* line 113, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .read:hover {
+  background: #ab7867;
+}
+/* line 116, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .food .rate .read:hover a {
+  color: white;
+}
+/* line 124, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes {
+  padding: 70px 70px 70px 0;
+}
+/* line 127, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes .recipe-text {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  position: relative;
+  border-bottom: 2px solid #aaa;
+  padding: 4px 5px;
+  left: 100px;
+}
+/* line 140, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes .images .chicken img {
+  width: 180px;
+  position: relative;
+  top: 50px;
+}
+/* line 146, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes .images .chicken .recipe-piece {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  top: 55px;
+  color: #ab7867;
+}
+/* line 157, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes .images .chicken1 img {
+  width: 180px;
+  position: relative;
+  top: 80px;
+}
+/* line 163, ../sass/modules/_popularRecipe.scss */
+.popular-recipe .recipes .images .chicken1 .recipe-piece {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  text-transform: capitalize;
+  position: relative;
+  top: 85px;
+  color: #ab7867;
+}
+
+/* line 2, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .title {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  position: relative;
+  border-bottom: 2px solid #aaa;
+  left: 600px;
+  padding: 4px 5px;
+}
+/* line 12, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe p {
+  font-family: "Satisfy", cursive;
+  font-size: 18px;
+  position: relative;
+  left: 260px;
+  top: 14px;
+  width: 850px;
+  text-align: center;
+  color: #ab7867;
+}
+/* line 23, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row {
+  padding: 30px 20px 0px 20px;
+  width: 100%;
+  margin-left: 0;
+}
+/* line 34, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature:hover .desc {
+  opacity: 1;
+  height: 120px;
+}
+/* line 41, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .img-container {
+  position: relative;
+}
+/* line 46, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .img-container img {
+  width: 100%;
+  height: 100%;
+}
+/* line 53, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc {
+  opacity: 0;
+  height: 0;
+  overflow: hidden;
+  transition: all 0.7s ease-in-out;
+  position: relative;
+  background: #fee;
+}
+/* line 80, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc .recipe-title a {
+  font-family: "Satisfy", cursive;
+  font-size: 20px;
+  color: #ab7867;
+  margin: 0 10px;
+  text-transform: capitalize;
+}
+/* line 89, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc h4 {
+  font-family: "Lora", serif;
+  position: relative;
+  left: 60px;
+  margin: 10px 20px;
+}
+/* line 97, ../sass/modules/_featuredRecipes.scss */
+.featured-recipe .row .feature .desc img {
+  margin: 10px 10px;
+}
+
+/* line 1, ../sass/modules/_latestRecipes.scss */
+.latest-recipe {
+  padding-top: 80px;
+}
+/* line 3, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .title {
+  font-family: "Lora", serif;
+  font-size: 24px;
+  text-transform: capitalize;
+  border-bottom: 2px solid #aaa;
+  padding: 4px 5px;
+  position: relative;
+  left: 320px;
+}
+/* line 15, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row {
+  padding: 10px 10px 20px 0;
+  width: 1200px;
+  height: 500px;
+}
+/* line 22, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 {
+  padding-right: 0px;
+  display: flex;
+  flex-direction: column;
+}
+/* line 28, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1:nth-child(1) {
+  position: relative;
+  top: 20px;
+}
+/* line 33, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1:nth-child(2) {
+  position: relative;
+  top: 20px;
+}
+/* line 38, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1:last-child {
+  position: relative;
+  top: calc(-490px - 80px);
+}
+/* line 43, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1:nth-child(4) {
+  position: relative;
+  top: calc(-490px - 80px);
+}
+/* line 48, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .img-container {
+  position: relative;
+  overflow: hidden;
+}
+/* line 51, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .img-container img {
+  width: 100%;
+  transition: transform 0.5s ease-out;
+}
+/* line 58, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .img-container img:hover {
+  transform: scale(1.05);
+}
+/* line 65, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 {
+  background: #ab7867;
+  height: 145px;
+  position: relative;
+  top: -1px;
+}
+/* line 73, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 .recipe-title a {
+  font-family: "Satisfy", cursive;
+  font-size: 23px;
+  color: white;
+  margin: 10px;
+  text-transform: capitalize;
+  position: relative;
+  top: 5px;
+}
+/* line 84, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 .recipe-time {
+  display: flex;
+  margin-top: 10px;
+}
+/* line 89, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 .recipe-time img {
+  margin: 3px 12px 3px 25px;
+}
+/* line 92, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 .recipe-time img:first-child {
+  margin-left: 10px;
+}
+/* line 97, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 .recipe-time span {
+  position: relative;
+  top: -3px;
+  font-size: 18px;
+}
+/* line 104, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .desc1 p {
+  font-family: "Satisfy", cursive;
+  font-size: 15px;
+  color: white;
+  left: 10px;
+  top: 0px;
+  width: 360px;
+  text-align: left;
+}
+/* line 117, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus {
+  width: 515px;
+  background-color: #eaddd9;
+  height: 1125px;
+  position: relative;
+  top: -50px;
+  left: 10px;
+}
+/* line 125, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus img {
+  max-width: 170px;
+  position: absolute;
+  left: 170px;
+  top: 20px;
+}
+/* line 132, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .girl {
+  width: 60px;
+  position: relative;
+  top: 50px;
+  left: 2px;
+}
+/* line 140, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus p {
+  font-family: "Satisfy", cursive;
+  font-size: 16px;
+  color: black;
+  left: 45px;
+  top: 260px;
+  width: 420px;
+  text-align: center;
+}
+/* line 150, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo {
+  width: 380px;
+  display: flex;
+  position: relative;
+  top: 280px;
+  left: 65px;
+  padding: 90px;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+}
+/* line 162, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon img {
+  left: 10px;
+  top: 60px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 166, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon img:hover {
+  transform: translateY(-10px);
+}
+/* line 172, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon1 img {
+  left: 110px;
+  top: 60px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 176, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon1 img:hover {
+  transform: translateY(-10px);
+}
+/* line 182, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon2 img {
+  left: 210px;
+  top: 60px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 186, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon2 img:hover {
+  transform: translateY(-10px);
+}
+/* line 192, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon3 img {
+  left: 310px;
+  top: 60px;
+  transition: all 0.5s ease-in-out;
+}
+/* line 196, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .logo .icon3 img:hover {
+  transform: translateY(-10px);
+}
+/* line 203, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper {
+  background: white;
+  position: relative;
+  top: 360px;
+  width: 400px;
+  height: 330px;
+  left: 60px;
+}
+/* line 211, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper .report-title {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  padding: 4px 5px;
+  font-weight: bolder;
+}
+/* line 222, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper p {
+  font-family: "Satisfy", cursive;
+  font-size: 15px;
+  color: #ab7867;
+  left: 15px;
+  top: 15px;
+  width: 360px;
+  text-align: center;
+}
+/* line 232, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper .email {
+  background: #ab7867;
+  position: relative;
+  top: 50px;
+  left: 60px;
+  width: 280px;
+}
+/* line 238, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper .email:hover {
+  background: #865342;
+}
+/* line 241, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .newspaper .email .title {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  left: 0px;
+  color: white;
+  border: 0;
+  font-weight: bolder;
+  text-transform: none;
+}
+/* line 255, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .subscribe {
+  background: white;
+  position: relative;
+  width: 400px;
+  height: 50px;
+  top: 400px;
+  left: 60px;
+}
+/* line 262, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .subscribe:hover {
+  background: #ab7867;
+}
+/* line 264, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .subscribe:hover .title {
+  color: white;
+}
+/* line 269, ../sass/modules/_latestRecipes.scss */
+.latest-recipe .row .feature1 .aboutus .subscribe .title {
+  font-family: "Lora", serif;
+  font-size: 28px;
+  text-align: center;
+  color: #ab7867;
+  border: 0;
+  font-weight: bolder;
+  left: 80px;
+  top: 5px;
+}

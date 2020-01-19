@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.main-nav
+{
+	list-style: none;
+	float: right;	
+}
+.main-nav li
+{
+	display: inline-block;
+	margin-left: 20px;
+}
+.main-nav li a
+{
+	color:black;
+	text-decoration: none;
+	font-size: 90%;
+	font-weight: bold;
+}
+.main-nav li a:hover
+{
+	color: #8e44ad;
+	border-bottom: 2px solid #8e44ad;
+	transition: all 0.5s ease-in;
+	padding: 15px 0;
+}
+.logo img
+{
+	float: left;
+}
+.saimon
+{
+   padding: 90px;
+   font-size: 20px;
+   margin-left: 180px; 
+   margin-right: 350px;
+   text-align: justify;
+   
+}
